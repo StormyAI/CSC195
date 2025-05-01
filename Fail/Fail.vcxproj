@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0362f6bc-e7ca-4351-9044-496f5f5b4d46}</ProjectGuid>
-    <RootNamespace>Classes</RootNamespace>
+    <ProjectGuid>{da1d25b4-c98f-482b-9268-2940f2984d10}</ProjectGuid>
+    <RootNamespace>Fail</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,12 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Classes.h" />
+    <ClCompile Include="..\..\..\..\Downloads\Fail.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"Rectangle.h"</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
